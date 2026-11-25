@@ -35,7 +35,11 @@ Then start a new shell (`exec bash`) or `source ~/.bashrc`.
 ```bash
 exec bash                        # load the new config: prompt shows exit code,
                                  # git branch, venv, user@host and cwd
-cat ~/.config/bashrc/.bash_history           # history lives in XDG, not $HOME
+hist                             # show the persistent history file
+                                 # (~/.config/bashrc/.bash_history, XDG)
+cfg-alias-common                 # sudo vim /etc/bash_aliases.d (system-wide), re-source
+cfg-alias-custom                 # edit ~/.config/bash_aliases.d, re-source
+cfg-alias-minimal                # edit the cfg-* helpers file, re-source
 ```
 
 ## Creating new aliases
@@ -45,7 +49,4 @@ echo "alias gs='git status'" \
   > ~/.config/bash_aliases.d/.bashrc_alias_git  # per-user override: one
                                                 # .bashrc_alias_* file per topic,
                                                 # sourced after /etc/bash_aliases.d
-cfg-alias-custom                 # edit ~/.config/bash_aliases.d, then re-source
-cfg-alias-common                 # sudo vim /etc/bash_aliases.d (system-wide), re-source
-cfg-alias-minimal                # edit the cfg-* helpers file, re-source
 ```

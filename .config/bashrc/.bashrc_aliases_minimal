@@ -5,6 +5,9 @@
 # config files themselves. Kept minimal so they work on any host.
 # The rest of the cfg-* family (cfg-vim, cfg-ssh, …) lives in .bashrc_alias_cfg.
 
+# View the persistent history file (lives in XDG, not $HOME; h = history builtin)
+alias hist='cat ~/.config/bashrc/.bash_history'
+
 # Edit the bashrc loader / the system alias dir / the per-user alias dir / this file
 alias cfg-bashrc="edit ~/.bashrc && source ~/.bashrc"
 alias cfg-alias-common="sudo vim /etc/bash_aliases.d && source ~/.bashrc"
