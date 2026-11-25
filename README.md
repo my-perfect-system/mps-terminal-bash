@@ -29,3 +29,13 @@ which clones this repository and deploys the same files per user.
 ```
 
 Then start a new shell (`exec bash`) or `source ~/.bashrc`.
+
+## Examples
+
+```bash
+exec bash                        # load the new config: prompt shows exit code,
+                                 # git branch, venv, user@host and cwd
+echo "alias gs='git status'" \
+  >> ~/.config/bashrc/.bashrc_alias_custom   # per-user alias override
+cat ~/.config/bashrc/.bash_history           # history lives in XDG, not $HOME
+```
