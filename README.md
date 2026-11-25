@@ -4,33 +4,15 @@ Bash shell configuration of the [my-perfect-system](https://github.com/my-perfec
 
 ## Install
 
-### Default
+| Method | Command |
+|---|---|
+| Default | `curl -fsSL https://raw.githubusercontent.com/my-perfect-system/mps-terminal-bash/main/bootstrap.sh \| bash` |
+| Ansible | role `odem.terminal.bash` of [odem-terminal](https://github.com/my-perfect-system/odem-terminal) |
+| Standalone | `./install.sh` |
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/my-perfect-system/mps-terminal-bash/main/bootstrap.sh | bash
-```
-
-Clones the repo to the system-wide mps repo dir
-`${MPS_REPO_DIR:-/srv/repo/github/my-perfect-system}` — the same clone the
-`odem.terminal.bash` role manages — and runs [`install.sh`](install.sh), which
-deploys to the invoking user's home. One clone per host: every user can run
-the same command. Re-run it to update. The clone location defaults to
-`REPO_DIR_DEFAULT` in [`bootstrap.sh`](bootstrap.sh) (override per invocation
-with the `MPS_REPO_DIR` env var).
-
-### Ansible
-
-Installed by the `odem.terminal.bash` role of the
-[odem-terminal](https://github.com/my-perfect-system/odem-terminal) collection,
-which clones this repository and deploys the same files per user.
-
-### Standalone
-
-```bash
-./install.sh    # deploys to the current user's $HOME; idempotent
-```
-
-Then start a new shell (`exec bash`) or `source ~/.bashrc`.
+All methods deploy to the current user's `$HOME`. Default clones to the
+system-wide mps repo dir `${MPS_REPO_DIR:-/srv/repo/github/my-perfect-system}`
+(one clone per host, shared by all users; re-run to update); then run `exec bash` or `sb`.
 
 ## Usage
 
