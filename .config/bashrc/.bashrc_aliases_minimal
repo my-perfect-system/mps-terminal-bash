@@ -1,12 +1,12 @@
 #!/bin/bash
 # shellcheck disable=SC2139
 
-# Minimal helpers — sourced before all aliases: commands to edit the bash
-# config files themselves. Kept minimal so they work on any host.
+# Minimal helpers — sourced before all aliases: essentials that must work
+# on any host: show-* (view info) and cfg-* (edit config files) helpers.
 # The rest of the cfg-* family (cfg-vim, cfg-ssh, …) lives in .bashrc_alias_cfg.
 
 # View the persistent history file (lives in XDG, not $HOME; h = history builtin)
-alias hist='cat ~/.config/bashrc/.bash_history'
+alias show-hist='cat ~/.config/bashrc/.bash_history'
 
 # Edit the bashrc loader / the system alias dir / the per-user alias dir / this file
 alias cfg-bashrc="edit ~/.bashrc && source ~/.bashrc"

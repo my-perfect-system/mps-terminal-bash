@@ -35,7 +35,7 @@ Then start a new shell (`exec bash`) or `source ~/.bashrc`.
 ```bash
 exec bash                        # load the new config: prompt shows exit code,
                                  # git branch, venv, user@host and cwd
-hist                             # show the persistent history file
+show-hist                        # show the persistent history file
                                  # (~/.config/bashrc/.bash_history, XDG)
 cfg-alias-common                 # sudo vim /etc/bash_aliases.d (system-wide), re-source
 cfg-alias-custom                 # edit ~/.config/bash_aliases.d, re-source
