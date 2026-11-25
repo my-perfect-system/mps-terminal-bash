@@ -11,6 +11,7 @@ Bash shell configuration of the [my-perfect-system](https://github.com/my-perfec
 | Standalone | run `./install.sh`; no network needed |
 
 ```bash
+# Install (Default)
 curl -fsSL https://raw.githubusercontent.com/my-perfect-system/mps-terminal-bash/main/bootstrap.sh | bash
 ```
 
