@@ -8,7 +8,7 @@ Bash shell configuration of the [my-perfect-system](https://github.com/my-perfec
 |---|---|
 | Default | `bootstrap.sh` clones to the system-wide mps repo dir and runs `install.sh` |
 | Ansible | role `odem.terminal.bash` of [odem-terminal](https://github.com/my-perfect-system/odem-terminal) |
-| Standalone | run `./install.sh`; no network needed |
+| Standalone | clone the repo, then run `./install.sh` inside it; no network needed |
 
 ```bash
 # Install (Default)
