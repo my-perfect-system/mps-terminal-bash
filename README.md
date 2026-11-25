@@ -4,6 +4,8 @@ Bash shell configuration of the [my-perfect-system](https://github.com/my-perfec
 
 ## Install
 
+### Default
+
 ```bash
 curl -fsSL https://raw.githubusercontent.com/my-perfect-system/mps-terminal-bash/main/bootstrap.sh | bash
 ```
@@ -16,13 +18,13 @@ the same command. Re-run it to update. The clone location defaults to
 `REPO_DIR_DEFAULT` in [`bootstrap.sh`](bootstrap.sh) (override per invocation
 with the `MPS_REPO_DIR` env var).
 
-## Install Ansible
+### Ansible
 
 Installed by the `odem.terminal.bash` role of the
 [odem-terminal](https://github.com/my-perfect-system/odem-terminal) collection,
 which clones this repository and deploys the same files per user.
 
-## Install Standalone
+### Standalone
 
 ```bash
 ./install.sh    # deploys to the current user's $HOME; idempotent
