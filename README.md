@@ -4,15 +4,23 @@ Bash shell configuration of the [my-perfect-system](https://github.com/my-perfec
 
 ## Install
 
-| Method | Command |
+| Method | Description |
 |---|---|
-| Default | `curl -fsSL https://raw.githubusercontent.com/my-perfect-system/mps-terminal-bash/main/bootstrap.sh \| bash` |
+| Default | `bootstrap.sh` clones to the system-wide mps repo dir and runs `install.sh` |
 | Ansible | role `odem.terminal.bash` of [odem-terminal](https://github.com/my-perfect-system/odem-terminal) |
-| Standalone | `./install.sh` |
+| Standalone | plain `install.sh`, no network needed |
 
-All methods deploy to the current user's `$HOME`. Default clones to the
-system-wide mps repo dir `${MPS_REPO_DIR:-/srv/repo/github/my-perfect-system}`
-(one clone per host, shared by all users; re-run to update); then run `exec bash` or `sb`.
+```bash
+# Default
+curl -fsSL https://raw.githubusercontent.com/my-perfect-system/mps-terminal-bash/main/bootstrap.sh | bash
+
+# Standalone
+./install.sh
+```
+
+All methods deploy to the current user's `$HOME`; one clone per host
+(`${MPS_REPO_DIR:-/srv/repo/github/my-perfect-system}`), shared by all users.
+Then run `exec bash` or `sb`.
 
 ## Usage
 
