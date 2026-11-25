@@ -12,7 +12,9 @@ Clones the repo to the system-wide mps repo dir
 `${MPS_REPO_DIR:-/srv/repo/github/my-perfect-system}` — the same clone the
 `odem.terminal.bash` role manages — and runs [`install.sh`](install.sh), which
 deploys to the invoking user's home. One clone per host: every user can run
-the same command. Re-run it to update.
+the same command. Re-run it to update. The clone location defaults to
+`REPO_DIR_DEFAULT` in [`bootstrap.sh`](bootstrap.sh) (override per invocation
+with the `MPS_REPO_DIR` env var).
 
 ## Layout
 
