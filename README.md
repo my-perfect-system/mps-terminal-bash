@@ -8,8 +8,11 @@ Bash shell configuration of the [my-perfect-system](https://github.com/my-perfec
 curl -fsSL https://raw.githubusercontent.com/my-perfect-system/mps-terminal-bash/main/bootstrap.sh | bash
 ```
 
-Clones the repo to `${XDG_DATA_HOME:-$HOME/.local/share}/mps/mps-terminal-bash`
-and runs [`install.sh`](install.sh). Re-run the same command to update.
+Clones the repo to the system-wide mps repo dir
+`${MPS_REPO_DIR:-/srv/repo/github/my-perfect-system}` — the same clone the
+`odem.terminal.bash` role manages — and runs [`install.sh`](install.sh), which
+deploys to the invoking user's home. One clone per host: every user can run
+the same command. Re-run it to update.
 
 ## Layout
 
