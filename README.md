@@ -17,7 +17,7 @@ curl -fsSL https://raw.githubusercontent.com/my-perfect-system/mps-terminal-bash
 ```
 
 All methods deploy to the current user's `$HOME`; one clone per host
-(`${MPS_REPO_DIR:-/srv/repo/github/my-perfect-system}`), shared by all users.
+(`${MPS_REPO_DIR:-/srv/repo/github/my-perfect-system/mps}`), shared by all users.
 Then run `exec bash` or `sb`.
 
 ## Usage
