@@ -10,8 +10,9 @@ Bash shell configuration of the [my-perfect-system](https://github.com/my-perfec
 | Ansible | role `odem.terminal.bash` of [odem-terminal](https://github.com/my-perfect-system/odem-terminal) |
 | Standalone | clone the repo, then run `./install.sh` inside it; no network needed |
 
+### Install (Default)
+
 ```bash
-# Install (Default)
 curl -fsSL https://raw.githubusercontent.com/my-perfect-system/mps-terminal-bash/main/bootstrap.sh | bash
 ```
 
