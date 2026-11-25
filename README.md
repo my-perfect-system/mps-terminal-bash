@@ -23,8 +23,6 @@ Then run `exec bash` or `sb`.
 ## Usage
 
 ```bash
-exec bash                        # load the new config: prompt shows exit code,
-                                 # git branch, venv, user@host and cwd
 info-hist                        # show the persistent history file
                                  # (~/.config/bashrc/.bash_history, XDG)
 sb                               # reload the bash config (source ~/.bashrc)
