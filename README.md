@@ -37,6 +37,8 @@ exec bash                        # load the new config: prompt shows exit code,
                                  # git branch, venv, user@host and cwd
 info-hist                        # show the persistent history file
                                  # (~/.config/bashrc/.bash_history, XDG)
+sb                               # reload the bash config (source ~/.bashrc)
+
 cfg-alias-common                 # sudo vim /etc/bash_aliases.d (system-wide), re-source
 cfg-alias-custom                 # edit ~/.config/bash_aliases.d, re-source
 cfg-alias-minimal                # edit the cfg-* helpers file, re-source

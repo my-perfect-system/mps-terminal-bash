@@ -8,6 +8,9 @@
 # View the persistent history file (lives in XDG, not $HOME; h = history builtin)
 alias info-hist='cat ~/.config/bashrc/.bash_history'
 
+# Reload the bash config
+alias sb='source ~/.bashrc'
+
 # Edit the bashrc loader / the system alias dir / the per-user alias dir / this file
 alias cfg-bashrc="edit ~/.bashrc && source ~/.bashrc"
 alias cfg-alias-common="sudo vim /etc/bash_aliases.d && source ~/.bashrc"
