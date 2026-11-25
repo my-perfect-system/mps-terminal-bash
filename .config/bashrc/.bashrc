@@ -27,6 +27,10 @@ HISTFILE=~/.config/bashrc/.bash_history
 HISTCONTROL=ignoreboth # don't put duplicate lines in the history.
 shopt -s histappend    # append to the history file, don't overwrite it
 shopt -s checkwinsize  # update the values of LINES and COLUMNS.
+#--- Minimal helpers -----------------------------------------------------------
+if [[ -f ~/.config/bashrc/.bashrc_aliases_minimal ]]; then
+  source ~/.config/bashrc/.bashrc_aliases_minimal
+fi
 #--- Aliases ------------------------------------------------------------------
 ALIASDIR_COMMON="/etc/bash_aliases.d"
 if [[ -d "$ALIASDIR_COMMON" ]]; then

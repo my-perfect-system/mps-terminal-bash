@@ -39,5 +39,6 @@ echo "alias gs='git status'" \
   > ~/.config/bash_aliases.d/.bashrc_alias_git  # per-user overrides: one
                                                 # .bashrc_alias_* file per topic,
                                                 # sourced after /etc/bash_aliases.d
+erc                                # open the main bash config in $EDITOR
 cat ~/.config/bashrc/.bash_history           # history lives in XDG, not $HOME
 ```

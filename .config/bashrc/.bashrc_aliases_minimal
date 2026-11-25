@@ -1,0 +1,11 @@
+#!/bin/bash
+# shellcheck disable=SC2139
+
+# Minimal helpers — sourced before all aliases: commands to edit the bash
+# config files themselves. Kept minimal so they work on any host.
+
+# Edit the main config / this file / the per-user alias dir / the system alias dir
+alias erc='${EDITOR:-vim} ~/.config/bashrc/.bashrc'
+alias ercm='${EDITOR:-vim} ~/.config/bashrc/.bashrc_aliases_minimal'
+alias eal='${EDITOR:-vim} ~/.config/bash_aliases.d'
+alias seal='sudoedit /etc/bash_aliases.d'

@@ -12,6 +12,7 @@ install -m 0600 "${SRC}/.config/bashrc/.bashrc_colors" "${CONF}/.bashrc_colors"
 install -m 0600 "${SRC}/.config/bashrc/.bashrc_distro" "${CONF}/.bashrc_distro"
 install -m 0600 "${SRC}/.config/bashrc/.bashrc_prompt" "${CONF}/.bashrc_prompt"
 install -m 0600 "${SRC}/.config/bashrc/.bash_logout"   "${CONF}/.bash_logout"
+install -m 0600 "${SRC}/.config/bashrc/.bashrc_aliases_minimal" "${CONF}/.bashrc_aliases_minimal"
 
 # Per-user alias overrides: ~/.config/bash_aliases.d is sourced as a whole
 # directory (.bashrc_alias_* files) — create it on first install only and
