@@ -40,5 +40,9 @@ echo "alias gs='git status'" \
                                                 # .bashrc_alias_* file per topic,
                                                 # sourced after /etc/bash_aliases.d
 erc                                # open the main bash config in $EDITOR
+cfg-bashrc                       # edit the ~/.bashrc loader, then re-source
+cfg-alias-common                 # sudo vim /etc/bash_aliases.d (pick a file), re-source
+cfg-alias-custom                 # edit ~/.config/bash_aliases.d, re-source
+cfg-alias-minimal                # edit this helpers file, re-source
 cat ~/.config/bashrc/.bash_history           # history lives in XDG, not $HOME
 ```
