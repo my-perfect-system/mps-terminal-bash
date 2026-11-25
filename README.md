@@ -36,7 +36,8 @@ Then start a new shell (`exec bash`) or `source ~/.bashrc`.
 exec bash                        # load the new config: prompt shows exit code,
                                  # git branch, venv, user@host and cwd
 echo "alias gs='git status'" \
-  >> ~/.config/bashrc/.bashrc_alias_custom   # per-user alias override (ships empty;
-                                             # sourced after the system aliases)
+  > ~/.config/bash_aliases.d/.bashrc_alias_git  # per-user overrides: one
+                                                # .bashrc_alias_* file per topic,
+                                                # sourced after /etc/bash_aliases.d
 cat ~/.config/bashrc/.bash_history           # history lives in XDG, not $HOME
 ```

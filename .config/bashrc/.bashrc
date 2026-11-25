@@ -35,8 +35,12 @@ if [[ -d "$ALIASDIR_COMMON" ]]; then
     source "$file"
   done
 fi
-if [[ -f ~/.config/bashrc/.bashrc_alias_custom ]]; then
-  source ~/.config/bashrc/.bashrc_alias_custom
+ALIASDIR_USER="${HOME}/.config/bash_aliases.d"
+if [[ -d "$ALIASDIR_USER" ]]; then
+  for file in "$ALIASDIR_USER"/.bashrc_alias_*; do
+    [[ -e "$file" ]] || continue # handle no matches
+    source "$file"
+  done
 fi
 #--- Bash completion ----------------------------------------------------------
 if ! shopt -oq posix; then
